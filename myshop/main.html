@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Shoppingmall</title>
+    <meta charset="utf-8" />
+    <link href="css/main.css" rel="stylesheet" />
+    <script type="text/javascript">
+        var imgArray=new Array();
+        imgArray[0]="img/cpu.jpg";
+        imgArray[1]="img/cpu2.jpg";
+        imgArray[2]="img/graphic.jpg";
+        imgArray[3]="img/ssd.jpg";
+
+        function showImage(){
+        var imgNum=Math.round(Math.random()*3);
+        var objImg=document.getElementById("introimg");
+        objImg.src=imgArray[imgNum];
+        setTimeout(showImage,3000);
+        }
+    </script>
+  </head>
+
+  <body onload="showImage()">
+    <div class="navbar">
+      <a class="nav_logo" href="main.html">
+        <img src="img/logo.png" height="50px">
+      </a>
+      <ul class="navLeft">
+        <li><a class="navMenu" href="#">CPU</a></li>
+        <li><a class="navMenu" href="#">Graphic Card</a></li>
+        <li><a class="navMenu" href="#">SSD</a></li>
+      </ul>
+      <ul class="navRight">
+        <li><a href="login.html">로그인</a></li>
+        <li><a href="join.html">회원가입</a></li>
+        <li><a href="https://www.seoultech.ac.kr/intro.jsp">고객센터</a></li>
+        <li><a href="main.html">홈페이지</a></li>
+      </ul>
+    </div>
+    
+    <a href="main.html">
+        <img class="hero_header" id="introimg">
+    </a>
+    <div class="products">
+      <h1>CPU</h1>
+      <a class="jb-a" href="https://shop.danawa.com/main/?controller=goods&methods=blog&billingInternalProductSeq=18039374&productRegisterAreaGroupSeq=78&serviceSectionSeq=594">
+        <img src="img/i7-13700k1.webp" alt="" class="jb-b">
+        <img src="img/i7-13700k2.jpg" alt="" class="jb-c">
+        <p>Intel I7-13700k</p>
+        <p class="price">577,290</p>
+      </a>
+      <a class="jb-a" href="https://shop.danawa.com/main/?controller=goods&methods=blog&billingInternalProductSeq=17913311&productRegisterAreaGroupSeq=78&serviceSectionSeq=594">
+        <img src="img/ryzen5-7600x1.webp" alt="" class="jb-b">
+        <img src="img/ryzen5-7600x2.webp" alt="" class="jb-c">
+        <p>Ryzen5-7600X</p>
+        <p class="price">400,660</p>
+      </a>
+      <a class="jb-a" href="https://shop.danawa.com/main/?controller=goods&methods=blog&billingInternalProductSeq=18038831&productRegisterAreaGroupSeq=78&serviceSectionSeq=594">
+        <img src="img/i5-13600kf.webp" alt="" class="jb-b">
+        <img src="img/i5-13600kf2.jpg" alt="" class="jb-c">
+        <p>Intel I5-13600kf</p>
+        <p class="price">411,460</p>
+      </a>
+      <h1>Graphic Card</h1>
+      <a class="jb-a" href="https://shop.danawa.com/main/?controller=goods&methods=blog&billingInternalProductSeq=17982335&productRegisterAreaGroupSeq=78&serviceSectionSeq=597">
+        <img src="img/msi_rtx_4090_1.webp" alt="" class="jb-b">
+        <img src="img/msi_rtx_4090_2.webp" alt="" class="jb-c">
+        <p>MSI RTX 4090 슈프림</p>
+        <p class="price">3,099,000</p>
+      </a>
+      <a class="jb-a" href="https://shop.danawa.com/main/?controller=goods&methods=blog&billingInternalProductSeq=17975774&productRegisterAreaGroupSeq=78&serviceSectionSeq=597">
+        <img src="img/palit_RTX_4090_1.webp" alt="" class="jb-b">
+        <img src="img/palit_RTX_4090_2.webp" alt="" class="jb-c">
+        <p>PALIT RTX 4090</p>
+        <p class="price">2,718,140</p>
+      </a>
+      <a class="jb-a" href="https://shop.danawa.com/main/?controller=goods&methods=blog&billingInternalProductSeq=17979071&productRegisterAreaGroupSeq=78&serviceSectionSeq=597">
+        <img src="img/galax_RTX_4090_1.webp" alt="" class="jb-b">
+        <img src="img/galax_RTX_4090_2.jpg" alt="" class="jb-c">
+        <p>GALAX RTX 4090</p>
+        <p class="price">2,777,000</p>
+      </a>
+      <h1>SSD</h1>
+      <a class="jb-a" href="https://shop.danawa.com/main/?controller=goods&methods=blog&billingInternalProductSeq=13276568&productRegisterAreaGroupSeq=78&serviceSectionSeq=604">
+        <img src="img/samsung_m.2_1.webp" alt="" class="jb-b">
+        <img src="img/samsung_m.2_1.webp" alt="" class="jb-c">
+        <p>삼성전자 PM9A1 M.2(1TB)</p>
+        <p class="price">123,110</p>
+      </a>
+      <a class="jb-a" href="https://shop.danawa.com/main/?controller=goods&methods=blog&billingInternalProductSeq=17001050&productRegisterAreaGroupSeq=78&serviceSectionSeq=604">
+        <img src="img/SK_m.2_1.webp" alt="" class="jb-b">
+        <img src="img/SK_m.2_2.webp" alt="" class="jb-c">
+        <p>SK하이닉스 P41 M.2(1TB)</p>
+        <p class="price">198,000</p>
+      </a>
+      <a class="jb-a" href="https://shop.danawa.com/main/?controller=goods&methods=blog&billingInternalProductSeq=14803520&productRegisterAreaGroupSeq=78&serviceSectionSeq=604">
+        <img src="img/seagate_m.2_1.webp" alt="" class="jb-b">
+        <img src="img/seagate_m.2_2.webp" alt="" class="jb-c">
+        <p>Seagate 파이어쿠다 530 M.2(1TB)</p>
+        <p class="price">199,000</p>
+      </a>
+      <div class="clearfix"></div>
+    </div>
+    
+    <div class="footer">
+      <a href="https://www.facebook.com"><img src="img/facebook.png"></a>
+      <a href="https://www.instagram.com/"><img src="img/instargram.webp"></a>
+      <a href="https://www.seoultech.ac.kr/intro.jsp"><img src="img/seoultech.png"></a>
+    </div>
+  </body>
+</html>

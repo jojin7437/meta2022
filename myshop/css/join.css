@@ -1,0 +1,73 @@
+body{
+    text-align:left;
+    background:#fff;
+    font-size:12px;
+    font-style: bold;
+}
+.body_login {
+    background-color:#f5f5f5; 
+    font-style: bold;
+}
+.body_login .join_wrap {
+    width: 600px;
+    height:auto;
+    margin:0 auto;
+    background-color:#fff;
+}
+.header_login {
+    width:440px;
+    margin:0 auto;
+    padding: 105px 0 0;
+    position: relative;
+}
+.logo {
+    display:block;
+    height:30px;
+}
+.haeder_text{
+    float:left;
+    font-size:24px;
+    letter-spacing:-0.05em;
+    color:#333;
+    font-style: bold;
+    margin-left: 230px;
+}
+.search_wrap {
+    width:440px;
+    padding-top: 38px; 
+    margin:0 auto; 
+    box-sizing: border-box;
+}
+.join {
+    position: relative;
+    padding-top: 30px;
+    margin-top: 16px;
+}
+.join label{
+    position:absolute;
+    top:0;
+    left:0;
+    font-size:16px;
+    color:#0f0f0f;
+    letter-spacing: -.96px;
+}
+.join input{
+    border:1px solid #bfbfbf; 
+    border-radius: 4px; 
+    font-size:15px;
+    color:#333; 
+    display:block; 
+    width:100%;
+    padding-left:16px; 
+    height:48px; 
+    line-height: 48px;
+    box-sizing: border-box;
+}
+.join input::placeholder {
+    color:#b2b2b2
+}
+.join p {
+    margin-top:10px;
+    font-size:13px; 
+    color:#333
+}

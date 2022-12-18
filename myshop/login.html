@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>로그인 페이지</title>
+        <link href="css/login.css" rel="stylesheet" />
+    </head>
+    <body class="body_login">
+        <div class="login_warp">
+            <div class="header_login">
+                <h1 class="logo">
+                    <a href="main.html"><img src="img/logo.png"></a>
+                </h1>
+            </div>
+        </div>
+        <div id="container" class="container content_login">
+            <form class="login_form" action="/login" method="post">
+                <div class="id_area">
+                    <div class="input_wrap">
+                        <span>
+                            <label class="lb" style="display:block;">아이디/인증 이메일</label>
+                            <input type="text" maxlength="40" name="id" class="int" placeholder="아이디/인증 이메일" value="" style="z-index: 8;">
+                            <button type="button" class="btn_del"></button>
+                        </span>
+                        <input type="hidden" name="isSaveId" value="">
+                    </div>
+                </div>
+                <div class="pw_area">
+                    <div class="input_wrap" id="danawa-member-login-loginPwdInputArea">
+                        <span>
+                            <label class="lb" style="display:block;">비밀번호</label>
+                            <input type="password" maxlength="20" name="password" class="int" placeholder="비밀번호">
+                            <button type="button" class="btn_del"><span class="ico i_del"></span></button>
+                        </span>
+                    </div>
+                </div>
+                <button class="btn_login" onclick="return false;">로그인</button>
+            </form>
+            <div class="menu_area">
+                <div class="login_info">
+                    <div class="help_w">
+                        <a href="join.html">회원가입</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <a href="https://www.facebook.com"><img src="img/facebook.png"></a>
+            <a href="https://www.instagram.com/"><img src="img/instargram.webp"></a>
+            <a href="https://www.seoultech.ac.kr/intro.jsp"><img src="img/seoultech.png"></a>
+          </div>
+    </body>
+</html>
